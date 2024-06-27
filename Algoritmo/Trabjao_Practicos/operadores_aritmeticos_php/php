@@ -1,0 +1,52 @@
+<?php
+
+$pesos=0;
+$opc=0;
+
+echo "ingrese valor a calcular";
+
+$pesos = trim(fgets(STDIN));
+
+echo "INGRESE EL BALOR QUE DESEA CALCULAR";
+echo "1 Euro\n";
+echo "2 Reales\n";
+echo "3 Dolar\n";
+echo "4 Libra\n";
+echo "5 Todos\n";
+
+$opc = trim(fgets(STDIN));
+switch($opc) { 
+
+case 1:
+    $T = $pesos / 922.87;
+    echo "el valor en Euro es : $T\n";
+    break;
+case 2:
+    $T = $pesos / 164.31;
+    echo "el valor en Reales es : $T\n";
+    break;
+case 3:
+    $T = $pesos / 1035.00;
+    echo "el valor en Dolar es : $T\n";
+    break;
+case 4:
+    $T = $pesos / 1079.51;
+    echo "el valor en Libra es : $T\n";
+    break;
+case 5:
+    $T = $pesos / 922.87;
+    echo "el valor en Euro es : $T\n";
+    
+    $T = $pesos / 164.31;
+    echo "el valor en Reales es : $T\n";
+    
+    $T = $pesos / 1035.00;
+    echo "el valor en Dolar es : $T\n";
+    
+    $T = $pesos / 1079.51;
+    echo "el valor en Libra es : $T\n";
+    break;
+
+}
+
+?>
